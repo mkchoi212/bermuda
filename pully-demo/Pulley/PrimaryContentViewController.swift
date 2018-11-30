@@ -16,8 +16,6 @@ class PrimaryContentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        controlsContainer.layer.cornerRadius = 10.0
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -588,20 +588,7 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
     
     /// The height of the open position for the drawer
     private var heightOfOpenDrawer: CGFloat {
-        
-        let safeAreaTopInset = pulleySafeAreaInsets.top
-        let safeAreaBottomInset = pulleySafeAreaInsets.bottom
-
-        var height = self.view.bounds.height - safeAreaTopInset
-        
-        if currentDisplayMode == .panel {
-            height -= (panelInsets.top + bounceOverflowMargin)
-            height -= (panelInsets.bottom + safeAreaBottomInset)
-        } else if currentDisplayMode == .drawer {
-            height -= drawerTopInset
-        }
-        
-        return height
+        return UIScreen.main.bounds.height
     }
         
     
@@ -802,13 +789,11 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
             let adjustedLeftSafeArea = adjustDrawerHorizontalInsetToSafeArea ? safeAreaLeftInset : 0.0
             let adjustedRightSafeArea = adjustDrawerHorizontalInsetToSafeArea ? safeAreaRightInset : 0.0
             
-            if supportedPositions.contains(.open)
-            {
+            if supportedPositions.contains(.open) {
                 // Layout scrollview
-                drawerScrollView.frame = CGRect(x: adjustedLeftSafeArea, y: drawerTopInset + safeAreaTopInset, width: self.view.bounds.width - adjustedLeftSafeArea - adjustedRightSafeArea, height: heightOfOpenDrawer)
+                drawerScrollView.frame = CGRect(x: adjustedLeftSafeArea, y: 0, width: self.view.bounds.width - adjustedLeftSafeArea - adjustedRightSafeArea, height: heightOfOpenDrawer)
             }
-            else
-            {
+            else {
                 // Layout scrollview
                 let adjustedTopInset: CGFloat = getStopList().max() ?? 0.0
                 drawerScrollView.frame = CGRect(x: adjustedLeftSafeArea, y: self.view.bounds.height - adjustedTopInset, width: self.view.bounds.width - adjustedLeftSafeArea - adjustedRightSafeArea, height: adjustedTopInset)
@@ -873,8 +858,7 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
             
             let yOrigin = (panelCornerPlacement == .bottomLeft || panelCornerPlacement == .bottomRight) ? (panelInsets.top + safeAreaTopInset) : (panelInsets.top + safeAreaTopInset + bounceOverflowMargin)
             
-            if supportedPositions.contains(.open)
-            {
+            if supportedPositions.contains(.open) {
                 // Layout scrollview
                 drawerScrollView.frame = CGRect(x: xOrigin, y: yOrigin, width: panelWidth, height: heightOfOpenDrawer)
             }

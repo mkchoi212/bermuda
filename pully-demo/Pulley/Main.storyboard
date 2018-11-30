@@ -153,8 +153,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <searchBar contentMode="redraw" verticalCompressionResistancePriority="751" searchBarStyle="minimal" placeholder="Where do you want to go?" translatesAutoresizingMaskIntoConstraints="NO" id="ofY-eD-jiB">
+                                            <searchBar contentMode="redraw" verticalCompressionResistancePriority="751" searchBarStyle="minimal" placeholder="Search destinations" translatesAutoresizingMaskIntoConstraints="NO" id="ofY-eD-jiB">
                                                 <rect key="frame" x="16" y="87" width="343" height="56"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="xWQ-C0-BdS"/>
+                                                </constraints>
+                                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="ivy-3E-KkU" id="4lj-uK-Jwi"/>
@@ -247,8 +251,10 @@
                     <connections>
                         <outlet property="bottomSeperatorView" destination="CUg-gZ-5Ur" id="aQW-Ed-gIu"/>
                         <outlet property="headerSectionHeightConstraint" destination="Tnq-90-xqY" id="eQl-9B-ugv"/>
+                        <outlet property="helloLabel" destination="Knq-P2-6q5" id="MLQ-Pt-9zi"/>
                         <outlet property="searchBar" destination="ofY-eD-jiB" id="O2q-qh-xCB"/>
                         <outlet property="tableView" destination="njO-tj-uAV" id="ISn-w2-Baa"/>
+                        <outlet property="whereToLabel" destination="hFt-fQ-9JA" id="mjx-j9-NDQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jti-h5-KK2" userLabel="First Responder" sceneMemberID="firstResponder"/>

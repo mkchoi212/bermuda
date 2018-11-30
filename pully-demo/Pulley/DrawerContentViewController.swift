@@ -15,6 +15,8 @@ class DrawerContentViewController: UIViewController {
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var bottomSeperatorView: UIView!
     
+    @IBOutlet weak var whereToLabel: UILabel!
+    @IBOutlet weak var helloLabel: UILabel!
     // We adjust our 'header' based on the bottom safe area using this constraint
     @IBOutlet var headerSectionHeightConstraint: NSLayoutConstraint!
     
@@ -29,14 +31,11 @@ class DrawerContentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        // You must wait until viewWillAppear -or- later in the view controller lifecycle in order to get a reference to Pulley via self.parent for customization.
-        // UIFeedbackGenerator is only available iOS 10+. Since Pulley works back to iOS 9, the .feedbackGenerator property is "Any" and managed internally as a feedback generator.
+
         if #available(iOS 10.0, *) {
             let feedbackGenerator = UISelectionFeedbackGenerator()
             self.pulleyViewController?.feedbackGenerator = feedbackGenerator
@@ -87,6 +86,9 @@ extension DrawerContentViewController: PulleyDrawerViewControllerDelegate {
         
         if drawer.drawerPosition != .open {
             searchBar.resignFirstResponder()
+        } else {
+            helloLabel.isHidden = true
+            whereToLabel.isHidden = true
         }
         
         if drawer.currentDisplayMode == .panel {
@@ -131,7 +133,6 @@ extension DrawerContentViewController: UITableViewDelegate {
         let primaryContent = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PrimaryTransitionTargetViewController")
 
         pulleyViewController?.setDrawerPosition(position: .collapsed, animated: true)
-
         pulleyViewController?.setPrimaryContentViewController(controller: primaryContent, animated: false)
     }
 }
