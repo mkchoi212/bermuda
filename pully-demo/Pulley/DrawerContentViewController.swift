@@ -11,14 +11,9 @@ import Pulley
 
 class DrawerContentViewController: UIViewController {
 
-    // Pulley can apply a custom mask to the panel drawer. This variable toggles an example.
-    private var shouldDisplayCustomMaskExample = false
-
     @IBOutlet var tableView: UITableView!
     @IBOutlet var searchBar: UISearchBar!
-    @IBOutlet var topSeparatorView: UIView!
     @IBOutlet var bottomSeperatorView: UIView!
-    
     
     // We adjust our 'header' based on the bottom safe area using this constraint
     @IBOutlet var headerSectionHeightConstraint: NSLayoutConstraint!
@@ -50,12 +45,6 @@ class DrawerContentViewController: UIViewController {
 
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-
-        if shouldDisplayCustomMaskExample {
-            let maskLayer = CAShapeLayer()
-            maskLayer.path = CustomMaskExample().customMask(for: view.bounds).cgPath
-            view.layer.mask = maskLayer
-        }
     }
 }
 
@@ -87,9 +76,9 @@ extension DrawerContentViewController: PulleyDrawerViewControllerDelegate {
          3. These changes are captured in an animation block (when necessary) by Pulley, so these changes will be animated along-side the drawer automatically.
          */
         if drawer.drawerPosition == .collapsed {
-            headerSectionHeightConstraint.constant = 68.0 + drawerBottomSafeArea
+            headerSectionHeightConstraint.constant = 160.0 + drawerBottomSafeArea
         } else {
-            headerSectionHeightConstraint.constant = 68.0
+            headerSectionHeightConstraint.constant = 160.0
         }
         
         // Handle tableview scrolling / searchbar editing
@@ -101,15 +90,12 @@ extension DrawerContentViewController: PulleyDrawerViewControllerDelegate {
         }
         
         if drawer.currentDisplayMode == .panel {
-            topSeparatorView.isHidden = drawer.drawerPosition == .collapsed
             bottomSeperatorView.isHidden = drawer.drawerPosition == .collapsed
         } else {
-            topSeparatorView.isHidden = false
             bottomSeperatorView.isHidden = true
         }
     }
     
-    /// This function is called when the current drawer display mode changes. Make UI customizations here.
     func drawerDisplayModeDidChange(drawer: PulleyViewController) {
         print("Drawer: \(drawer.currentDisplayMode)")
     }

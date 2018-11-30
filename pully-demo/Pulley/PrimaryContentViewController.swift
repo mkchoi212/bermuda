@@ -13,7 +13,6 @@ import Pulley
 class PrimaryContentViewController: UIViewController {
     
     @IBOutlet var mapView: MKMapView!
-    @IBOutlet var controlsContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,12 +47,6 @@ class PrimaryContentViewController: UIViewController {
 extension PrimaryContentViewController: PulleyPrimaryContentControllerDelegate {
     
     func makeUIAdjustmentsForFullscreen(progress: CGFloat, bottomSafeArea: CGFloat) {
-        guard let drawer = self.pulleyViewController, drawer.currentDisplayMode == .drawer else {
-            controlsContainer.alpha = 1.0
-            return
-        }
-        
-        controlsContainer.alpha = 1.0 - progress
     }
     
     func drawerChangedDistanceFromBottom(drawer: PulleyViewController, distance: CGFloat, bottomSafeArea: CGFloat) {
