@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:bermuda.xcodeproj">
+      location = "group:/Users/mikechoi/Desktop/bermuda/bermuda/Main.storyboard">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

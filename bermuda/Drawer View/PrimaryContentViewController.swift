@@ -1,0 +1,52 @@
+//
+//  ViewController.swift
+//  Pulley
+//
+//  Created by Brendan Lee on 7/6/16.
+//  Copyright © 2016 52inc. All rights reserved.
+//
+
+import UIKit
+import MapKit
+
+class PrimaryContentViewController: UIViewController {
+    
+    @IBOutlet var mapView: MKMapView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Customize Pulley in viewWillAppear, as the view controller's viewDidLoad will run *before* Pulley's and some changes may be overwritten.
+        // Uncomment if you want to change the visual effect style to dark. Note: The rest of the sample app's UI isn't made for dark theme. This just shows you how to do it.
+        // drawer.drawerBackgroundVisualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+
+        // We want the 'side panel' layout in landscape iPhone / iPad, so we set this to 'automatic'. The default is 'bottomDrawer' for compatibility with older Pulley versions.
+        self.pulleyViewController?.displayMode = .automatic
+    }
+    
+    @IBAction func runPrimaryContentTransitionWithoutAnimation(sender: AnyObject) {
+        let primaryContent = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PrimaryTransitionTargetViewController")
+
+        self.pulleyViewController?.setPrimaryContentViewController(controller: primaryContent, animated: false)
+    }
+    
+    @IBAction func runPrimaryContentTransition(sender: AnyObject) {
+        let primaryContent = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PrimaryTransitionTargetViewController")
+
+        self.pulleyViewController?.setPrimaryContentViewController(controller: primaryContent, animated: true)
+    }
+}
+
+extension PrimaryContentViewController: PulleyPrimaryContentControllerDelegate {
+    
+    func makeUIAdjustmentsForFullscreen(progress: CGFloat, bottomSafeArea: CGFloat) {
+    }
+    
+    func drawerChangedDistanceFromBottom(drawer: PulleyViewController, distance: CGFloat, bottomSafeArea: CGFloat) {
+    }
+}
+

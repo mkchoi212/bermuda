@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA53560B21B45C3900C80038 /* PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560721B45C3900C80038 /* PulleyViewController.swift */; };
+		CA53560C21B45C3900C80038 /* UIViewController+PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560821B45C3900C80038 /* UIViewController+PulleyViewController.swift */; };
+		CA53560D21B45C3900C80038 /* PulleyPassthroughScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560921B45C3900C80038 /* PulleyPassthroughScrollView.swift */; };
+		CA53560E21B45C3900C80038 /* UIView+constrainToParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560A21B45C3900C80038 /* UIView+constrainToParent.swift */; };
+		CA53561321B45DA800C80038 /* DrawerContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560F21B45DA700C80038 /* DrawerContentViewController.swift */; };
+		CA53561421B45DA800C80038 /* PrimaryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53561021B45DA700C80038 /* PrimaryContentViewController.swift */; };
+		CA53561521B45DA800C80038 /* CustomMaskExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53561121B45DA800C80038 /* CustomMaskExample.swift */; };
+		CA53561621B45DA800C80038 /* PrimaryTransitionTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53561221B45DA800C80038 /* PrimaryTransitionTargetViewController.swift */; };
+		CA53561921B45EC800C80038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA53561821B45EC800C80038 /* Main.storyboard */; };
+		CA53561B21B45FD800C80038 /* UIView+SafetyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53561A21B45FD800C80038 /* UIView+SafetyLayout.swift */; };
+		CA53561E21B462A900C80038 /* SearchTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53561D21B462A900C80038 /* SearchTableViewDataSource.swift */; };
+		CA53562021B462B600C80038 /* SearchTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53561F21B462B600C80038 /* SearchTableViewDelegate.swift */; };
 		CAF61FF821ADEB6000343DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF61FF721ADEB6000343DB6 /* AppDelegate.swift */; };
-		CAF61FFA21ADEB6000343DB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF61FF921ADEB6000343DB6 /* ViewController.swift */; };
-		CAF61FFD21ADEB6000343DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF61FFB21ADEB6000343DB6 /* Main.storyboard */; };
 		CAF6200021ADEB6000343DB6 /* bermuda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAF61FFE21ADEB6000343DB6 /* bermuda.xcdatamodeld */; };
 		CAF6200221ADEB6200343DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF6200121ADEB6200343DB6 /* Assets.xcassets */; };
 		CAF6200521ADEB6200343DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF6200321ADEB6200343DB6 /* LaunchScreen.storyboard */; };
@@ -35,10 +45,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA53560721B45C3900C80038 /* PulleyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulleyViewController.swift; sourceTree = "<group>"; };
+		CA53560821B45C3900C80038 /* UIViewController+PulleyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PulleyViewController.swift"; sourceTree = "<group>"; };
+		CA53560921B45C3900C80038 /* PulleyPassthroughScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulleyPassthroughScrollView.swift; sourceTree = "<group>"; };
+		CA53560A21B45C3900C80038 /* UIView+constrainToParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+constrainToParent.swift"; sourceTree = "<group>"; };
+		CA53560F21B45DA700C80038 /* DrawerContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerContentViewController.swift; sourceTree = "<group>"; };
+		CA53561021B45DA700C80038 /* PrimaryContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryContentViewController.swift; sourceTree = "<group>"; };
+		CA53561121B45DA800C80038 /* CustomMaskExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMaskExample.swift; sourceTree = "<group>"; };
+		CA53561221B45DA800C80038 /* PrimaryTransitionTargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryTransitionTargetViewController.swift; sourceTree = "<group>"; };
+		CA53561821B45EC800C80038 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CA53561A21B45FD800C80038 /* UIView+SafetyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SafetyLayout.swift"; sourceTree = "<group>"; };
+		CA53561D21B462A900C80038 /* SearchTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewDataSource.swift; sourceTree = "<group>"; };
+		CA53561F21B462B600C80038 /* SearchTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewDelegate.swift; sourceTree = "<group>"; };
 		CAF61FF421ADEB6000343DB6 /* bermuda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bermuda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF61FF721ADEB6000343DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAF61FF921ADEB6000343DB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CAF61FFC21ADEB6000343DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAF61FFF21ADEB6000343DB6 /* bermuda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bermuda.xcdatamodel; sourceTree = "<group>"; };
 		CAF6200121ADEB6200343DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAF6200421ADEB6200343DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +96,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA53560621B45C3900C80038 /* Pulley */ = {
+			isa = PBXGroup;
+			children = (
+				CA53560721B45C3900C80038 /* PulleyViewController.swift */,
+				CA53560821B45C3900C80038 /* UIViewController+PulleyViewController.swift */,
+				CA53560921B45C3900C80038 /* PulleyPassthroughScrollView.swift */,
+				CA53560A21B45C3900C80038 /* UIView+constrainToParent.swift */,
+			);
+			path = Pulley;
+			sourceTree = "<group>";
+		};
+		CA53561C21B45FDC00C80038 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				CAF6200621ADEB6200343DB6 /* Info.plist */,
+				CAF61FFE21ADEB6000343DB6 /* bermuda.xcdatamodeld */,
+				CA53561A21B45FD800C80038 /* UIView+SafetyLayout.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		CA53562121B464E300C80038 /* Search Table */ = {
+			isa = PBXGroup;
+			children = (
+				CA53561D21B462A900C80038 /* SearchTableViewDataSource.swift */,
+				CA53561F21B462B600C80038 /* SearchTableViewDelegate.swift */,
+			);
+			path = "Search Table";
+			sourceTree = "<group>";
+		};
+		CA53562221B464F000C80038 /* Drawer View */ = {
+			isa = PBXGroup;
+			children = (
+				CA53561121B45DA800C80038 /* CustomMaskExample.swift */,
+				CA53560F21B45DA700C80038 /* DrawerContentViewController.swift */,
+				CA53561021B45DA700C80038 /* PrimaryContentViewController.swift */,
+				CA53561221B45DA800C80038 /* PrimaryTransitionTargetViewController.swift */,
+			);
+			path = "Drawer View";
+			sourceTree = "<group>";
+		};
+		CA53562321B464FD00C80038 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CAF6200321ADEB6200343DB6 /* LaunchScreen.storyboard */,
+				CA53561821B45EC800C80038 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		CAF61FEB21ADEB6000343DB6 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +169,13 @@
 		CAF61FF621ADEB6000343DB6 /* bermuda */ = {
 			isa = PBXGroup;
 			children = (
+				CA53560621B45C3900C80038 /* Pulley */,
 				CAF61FF721ADEB6000343DB6 /* AppDelegate.swift */,
-				CAF61FF921ADEB6000343DB6 /* ViewController.swift */,
-				CAF61FFB21ADEB6000343DB6 /* Main.storyboard */,
+				CA53562221B464F000C80038 /* Drawer View */,
+				CA53562121B464E300C80038 /* Search Table */,
+				CA53562321B464FD00C80038 /* Storyboard */,
 				CAF6200121ADEB6200343DB6 /* Assets.xcassets */,
-				CAF6200321ADEB6200343DB6 /* LaunchScreen.storyboard */,
-				CAF6200621ADEB6200343DB6 /* Info.plist */,
-				CAF61FFE21ADEB6000343DB6 /* bermuda.xcdatamodeld */,
+				CA53561C21B45FDC00C80038 /* Utility */,
 			);
 			path = bermuda;
 			sourceTree = "<group>";
@@ -232,9 +302,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA53561921B45EC800C80038 /* Main.storyboard in Resources */,
 				CAF6200521ADEB6200343DB6 /* LaunchScreen.storyboard in Resources */,
 				CAF6200221ADEB6200343DB6 /* Assets.xcassets in Resources */,
-				CAF61FFD21ADEB6000343DB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +329,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF61FFA21ADEB6000343DB6 /* ViewController.swift in Sources */,
+				CA53561521B45DA800C80038 /* CustomMaskExample.swift in Sources */,
+				CA53561321B45DA800C80038 /* DrawerContentViewController.swift in Sources */,
+				CA53561E21B462A900C80038 /* SearchTableViewDataSource.swift in Sources */,
+				CA53560E21B45C3900C80038 /* UIView+constrainToParent.swift in Sources */,
 				CAF6200021ADEB6000343DB6 /* bermuda.xcdatamodeld in Sources */,
+				CA53562021B462B600C80038 /* SearchTableViewDelegate.swift in Sources */,
 				CAF61FF821ADEB6000343DB6 /* AppDelegate.swift in Sources */,
+				CA53560D21B45C3900C80038 /* PulleyPassthroughScrollView.swift in Sources */,
+				CA53560C21B45C3900C80038 /* UIViewController+PulleyViewController.swift in Sources */,
+				CA53561621B45DA800C80038 /* PrimaryTransitionTargetViewController.swift in Sources */,
+				CA53560B21B45C3900C80038 /* PulleyViewController.swift in Sources */,
+				CA53561B21B45FD800C80038 /* UIView+SafetyLayout.swift in Sources */,
+				CA53561421B45DA800C80038 /* PrimaryContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +377,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CAF61FFB21ADEB6000343DB6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAF61FFC21ADEB6000343DB6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CAF6200321ADEB6200343DB6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7J57M62A98;
-				INFOPLIST_FILE = bermuda/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/bermuda/Utility/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7J57M62A98;
-				INFOPLIST_FILE = bermuda/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/bermuda/Utility/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
