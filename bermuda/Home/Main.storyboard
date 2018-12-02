@@ -85,7 +85,7 @@
         <!--Primary Transition Target View Controller-->
         <scene sceneID="rC6-aE-yeD">
             <objects>
-                <viewController storyboardIdentifier="PrimaryTransitionTargetViewController" id="cxY-AH-E4w" customClass="PrimaryTransitionTargetViewController" customModule="bermuda" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PrimaryTransitionTargetViewController" id="cxY-AH-E4w" customClass="PrimaryTransitionTargetViewController" customModule="bermuda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GtQ-yD-cjm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="1609" y="152"/>
         </scene>
-        <!--Drawer Content View Controller-->
+        <!--Home Panel View Controller-->
         <scene sceneID="1cR-cD-Gai">
             <objects>
-                <viewController storyboardIdentifier="DrawerContentViewController" id="ivy-3E-KkU" customClass="DrawerContentViewController" customModule="bermuda" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomePanelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ivy-3E-KkU" customClass="HomePanelViewController" customModule="bermuda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="amw-OD-m8D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

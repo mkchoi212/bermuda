@@ -11,7 +11,7 @@
 		CA53560C21B45C3900C80038 /* UIViewController+PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560821B45C3900C80038 /* UIViewController+PulleyViewController.swift */; };
 		CA53560D21B45C3900C80038 /* PulleyPassthroughScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560921B45C3900C80038 /* PulleyPassthroughScrollView.swift */; };
 		CA53560E21B45C3900C80038 /* UIView+constrainToParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560A21B45C3900C80038 /* UIView+constrainToParent.swift */; };
-		CA53561321B45DA800C80038 /* DrawerContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560F21B45DA700C80038 /* DrawerContentViewController.swift */; };
+		CA53561321B45DA800C80038 /* HomePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560F21B45DA700C80038 /* HomePanelViewController.swift */; };
 		CA53561421B45DA800C80038 /* PrimaryContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53561021B45DA700C80038 /* PrimaryContentViewController.swift */; };
 		CA53561521B45DA800C80038 /* CustomMaskExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53561121B45DA800C80038 /* CustomMaskExample.swift */; };
 		CA53561621B45DA800C80038 /* PrimaryTransitionTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53561221B45DA800C80038 /* PrimaryTransitionTargetViewController.swift */; };
@@ -19,6 +19,10 @@
 		CA53561B21B45FD800C80038 /* UIView+SafetyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53561A21B45FD800C80038 /* UIView+SafetyLayout.swift */; };
 		CA53561E21B462A900C80038 /* SearchTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53561D21B462A900C80038 /* SearchTableViewDataSource.swift */; };
 		CA53562021B462B600C80038 /* SearchTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53561F21B462B600C80038 /* SearchTableViewDelegate.swift */; };
+		CA53562721B469B800C80038 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53562621B469B800C80038 /* SearchViewController.swift */; };
+		CA53562921B46AA200C80038 /* Full.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA53562821B46AA200C80038 /* Full.storyboard */; };
+		CA53562C21B470EE00C80038 /* AppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53562B21B470EE00C80038 /* AppearanceManager.swift */; };
+		CA53562E21B4712600C80038 /* PresentationTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53562D21B4712600C80038 /* PresentationTheme.swift */; };
 		CAF61FF821ADEB6000343DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF61FF721ADEB6000343DB6 /* AppDelegate.swift */; };
 		CAF6200021ADEB6000343DB6 /* bermuda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAF61FFE21ADEB6000343DB6 /* bermuda.xcdatamodeld */; };
 		CAF6200221ADEB6200343DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF6200121ADEB6200343DB6 /* Assets.xcassets */; };
@@ -49,7 +53,7 @@
 		CA53560821B45C3900C80038 /* UIViewController+PulleyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PulleyViewController.swift"; sourceTree = "<group>"; };
 		CA53560921B45C3900C80038 /* PulleyPassthroughScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulleyPassthroughScrollView.swift; sourceTree = "<group>"; };
 		CA53560A21B45C3900C80038 /* UIView+constrainToParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+constrainToParent.swift"; sourceTree = "<group>"; };
-		CA53560F21B45DA700C80038 /* DrawerContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerContentViewController.swift; sourceTree = "<group>"; };
+		CA53560F21B45DA700C80038 /* HomePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePanelViewController.swift; sourceTree = "<group>"; };
 		CA53561021B45DA700C80038 /* PrimaryContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryContentViewController.swift; sourceTree = "<group>"; };
 		CA53561121B45DA800C80038 /* CustomMaskExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMaskExample.swift; sourceTree = "<group>"; };
 		CA53561221B45DA800C80038 /* PrimaryTransitionTargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryTransitionTargetViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +61,10 @@
 		CA53561A21B45FD800C80038 /* UIView+SafetyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SafetyLayout.swift"; sourceTree = "<group>"; };
 		CA53561D21B462A900C80038 /* SearchTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewDataSource.swift; sourceTree = "<group>"; };
 		CA53561F21B462B600C80038 /* SearchTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewDelegate.swift; sourceTree = "<group>"; };
+		CA53562621B469B800C80038 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CA53562821B46AA200C80038 /* Full.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Full.storyboard; sourceTree = "<group>"; };
+		CA53562B21B470EE00C80038 /* AppearanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceManager.swift; sourceTree = "<group>"; };
+		CA53562D21B4712600C80038 /* PresentationTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTheme.swift; sourceTree = "<group>"; };
 		CAF61FF421ADEB6000343DB6 /* bermuda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bermuda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF61FF721ADEB6000343DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF61FFF21ADEB6000343DB6 /* bermuda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bermuda.xcdatamodel; sourceTree = "<group>"; };
@@ -126,24 +134,34 @@
 			path = "Search Table";
 			sourceTree = "<group>";
 		};
-		CA53562221B464F000C80038 /* Drawer View */ = {
+		CA53562221B464F000C80038 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				CA53561121B45DA800C80038 /* CustomMaskExample.swift */,
-				CA53560F21B45DA700C80038 /* DrawerContentViewController.swift */,
-				CA53561021B45DA700C80038 /* PrimaryContentViewController.swift */,
-				CA53561221B45DA800C80038 /* PrimaryTransitionTargetViewController.swift */,
+				CA53562821B46AA200C80038 /* Full.storyboard */,
+				CA53562621B469B800C80038 /* SearchViewController.swift */,
+				CA53562121B464E300C80038 /* Search Table */,
 			);
-			path = "Drawer View";
+			path = Search;
 			sourceTree = "<group>";
 		};
 		CA53562321B464FD00C80038 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
 				CAF6200321ADEB6200343DB6 /* LaunchScreen.storyboard */,
-				CA53561821B45EC800C80038 /* Main.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CA53562A21B4702100C80038 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CA53561821B45EC800C80038 /* Main.storyboard */,
+				CA53560F21B45DA700C80038 /* HomePanelViewController.swift */,
+				CA53561021B45DA700C80038 /* PrimaryContentViewController.swift */,
+				CA53561221B45DA800C80038 /* PrimaryTransitionTargetViewController.swift */,
+				CA53561121B45DA800C80038 /* CustomMaskExample.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		CAF61FEB21ADEB6000343DB6 = {
@@ -171,8 +189,10 @@
 			children = (
 				CA53560621B45C3900C80038 /* Pulley */,
 				CAF61FF721ADEB6000343DB6 /* AppDelegate.swift */,
-				CA53562221B464F000C80038 /* Drawer View */,
-				CA53562121B464E300C80038 /* Search Table */,
+				CA53562B21B470EE00C80038 /* AppearanceManager.swift */,
+				CA53562D21B4712600C80038 /* PresentationTheme.swift */,
+				CA53562A21B4702100C80038 /* Home */,
+				CA53562221B464F000C80038 /* Search */,
 				CA53562321B464FD00C80038 /* Storyboard */,
 				CAF6200121ADEB6200343DB6 /* Assets.xcassets */,
 				CA53561C21B45FDC00C80038 /* Utility */,
@@ -303,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA53561921B45EC800C80038 /* Main.storyboard in Resources */,
+				CA53562921B46AA200C80038 /* Full.storyboard in Resources */,
 				CAF6200521ADEB6200343DB6 /* LaunchScreen.storyboard in Resources */,
 				CAF6200221ADEB6200343DB6 /* Assets.xcassets in Resources */,
 			);
@@ -330,9 +351,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA53561521B45DA800C80038 /* CustomMaskExample.swift in Sources */,
-				CA53561321B45DA800C80038 /* DrawerContentViewController.swift in Sources */,
+				CA53562E21B4712600C80038 /* PresentationTheme.swift in Sources */,
+				CA53561321B45DA800C80038 /* HomePanelViewController.swift in Sources */,
 				CA53561E21B462A900C80038 /* SearchTableViewDataSource.swift in Sources */,
 				CA53560E21B45C3900C80038 /* UIView+constrainToParent.swift in Sources */,
+				CA53562C21B470EE00C80038 /* AppearanceManager.swift in Sources */,
 				CAF6200021ADEB6000343DB6 /* bermuda.xcdatamodeld in Sources */,
 				CA53562021B462B600C80038 /* SearchTableViewDelegate.swift in Sources */,
 				CAF61FF821ADEB6000343DB6 /* AppDelegate.swift in Sources */,
@@ -342,6 +365,7 @@
 				CA53560B21B45C3900C80038 /* PulleyViewController.swift in Sources */,
 				CA53561B21B45FD800C80038 /* UIView+SafetyLayout.swift in Sources */,
 				CA53561421B45DA800C80038 /* PrimaryContentViewController.swift in Sources */,
+				CA53562721B469B800C80038 /* SearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
