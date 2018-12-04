@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA2805B121B48D3900DED0AF /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2805B021B48D3900DED0AF /* UIView+Shadow.swift */; };
+		CA2805B321B495AE00DED0AF /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2805B221B495AE00DED0AF /* SearchTableViewCell.swift */; };
 		CA53560B21B45C3900C80038 /* PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560721B45C3900C80038 /* PulleyViewController.swift */; };
 		CA53560C21B45C3900C80038 /* UIViewController+PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560821B45C3900C80038 /* UIViewController+PulleyViewController.swift */; };
 		CA53560D21B45C3900C80038 /* PulleyPassthroughScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA53560921B45C3900C80038 /* PulleyPassthroughScrollView.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA2805B021B48D3900DED0AF /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		CA2805B221B495AE00DED0AF /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		CA53560721B45C3900C80038 /* PulleyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulleyViewController.swift; sourceTree = "<group>"; };
 		CA53560821B45C3900C80038 /* UIViewController+PulleyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PulleyViewController.swift"; sourceTree = "<group>"; };
 		CA53560921B45C3900C80038 /* PulleyPassthroughScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulleyPassthroughScrollView.swift; sourceTree = "<group>"; };
@@ -118,9 +122,10 @@
 		CA53561C21B45FDC00C80038 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				CA53561A21B45FD800C80038 /* UIView+SafetyLayout.swift */,
+				CA2805B021B48D3900DED0AF /* UIView+Shadow.swift */,
 				CAF6200621ADEB6200343DB6 /* Info.plist */,
 				CAF61FFE21ADEB6000343DB6 /* bermuda.xcdatamodeld */,
-				CA53561A21B45FD800C80038 /* UIView+SafetyLayout.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				CA53562821B46AA200C80038 /* Full.storyboard */,
+				CA2805B221B495AE00DED0AF /* SearchTableViewCell.swift */,
 				CA53562621B469B800C80038 /* SearchViewController.swift */,
 				CA53562121B464E300C80038 /* Search Table */,
 			);
@@ -359,7 +365,9 @@
 				CAF6200021ADEB6000343DB6 /* bermuda.xcdatamodeld in Sources */,
 				CA53562021B462B600C80038 /* SearchTableViewDelegate.swift in Sources */,
 				CAF61FF821ADEB6000343DB6 /* AppDelegate.swift in Sources */,
+				CA2805B321B495AE00DED0AF /* SearchTableViewCell.swift in Sources */,
 				CA53560D21B45C3900C80038 /* PulleyPassthroughScrollView.swift in Sources */,
+				CA2805B121B48D3900DED0AF /* UIView+Shadow.swift in Sources */,
 				CA53560C21B45C3900C80038 /* UIViewController+PulleyViewController.swift in Sources */,
 				CA53561621B45DA800C80038 /* PrimaryTransitionTargetViewController.swift in Sources */,
 				CA53560B21B45C3900C80038 /* PulleyViewController.swift in Sources */,
