@@ -12,6 +12,7 @@ final class SearchViewController: UIViewController {
     
     @IBOutlet weak var topPadding: NSLayoutConstraint!
     @IBOutlet weak var searchTableView: UITableView!
+    @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
     
     var locations: [Location] = [
         Location(category: .start, name: "Current Location")
@@ -34,8 +35,11 @@ final class SearchViewController: UIViewController {
         let navigationBarHeight = navigationController!.navigationBar.frame.size.height
         topPadding.constant += navigationBarHeight
         
+        tableViewHeight.constant = SearchTableViewCell.height * 2
+        
         searchTableView.layer.cornerRadius = 8.0
         searchTableView.dropShadow()
+        searchTableView.tableFooterView = UIView()
         
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
@@ -78,6 +82,6 @@ extension SearchViewController: UITableViewDataSource {
 
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 55
+        return SearchTableViewCell.height
     }
 }

@@ -19,8 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bej-mb-rDA">
-                                <rect key="frame" x="16" y="80" width="343" height="201"/>
+                                <rect key="frame" x="16" y="80" width="343" height="110"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="eTR-mc-FQp"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="V1P-hQ-gCX"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchTableViewCell" id="Mm7-Pm-aGt" customClass="SearchTableViewCell" customModule="bermuda" customModuleProvider="target">
@@ -82,7 +85,6 @@
                         <constraints>
                             <constraint firstItem="bej-mb-rDA" firstAttribute="top" secondItem="q9q-7A-Xfo" secondAttribute="top" constant="16" id="HaA-Dl-OTn"/>
                             <constraint firstItem="bej-mb-rDA" firstAttribute="leading" secondItem="q9q-7A-Xfo" secondAttribute="leading" constant="16" id="VOd-VR-BMP"/>
-                            <constraint firstItem="bej-mb-rDA" firstAttribute="height" secondItem="lco-PT-KCx" secondAttribute="height" multiplier="0.3" constant="1" id="eXD-R5-Wew"/>
                             <constraint firstItem="q9q-7A-Xfo" firstAttribute="trailing" secondItem="bej-mb-rDA" secondAttribute="trailing" constant="16" id="uDR-fX-oed"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q9q-7A-Xfo"/>
@@ -97,6 +99,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="searchTableView" destination="bej-mb-rDA" id="f0U-la-9OQ"/>
+                        <outlet property="tableViewHeight" destination="eTR-mc-FQp" id="zY4-uY-pig"/>
                         <outlet property="topPadding" destination="HaA-Dl-OTn" id="lnb-BE-54X"/>
                     </connections>
                 </viewController>
@@ -107,7 +110,6 @@
         <!--Navigation Controller-->
         <scene sceneID="LIV-gk-v25">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EWk-BG-OAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0b3-3G-qvR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="da4-aA-exs">
@@ -119,6 +121,7 @@
                         <segue destination="y6f-Re-L6c" kind="relationship" relationship="rootViewController" id="Xok-t8-Ik4"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWk-BG-OAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-20" y="87.706146926536732"/>
         </scene>

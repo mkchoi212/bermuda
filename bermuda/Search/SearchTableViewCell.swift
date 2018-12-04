@@ -35,6 +35,7 @@ final class SearchTableViewCell: UITableViewCell {
     
     static let plus = UIImage(named: "+")!
     static let minus = UIImage(named: "x")!
+    static let height: CGFloat = 55
     
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
