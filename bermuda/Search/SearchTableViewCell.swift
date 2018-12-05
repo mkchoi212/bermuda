@@ -30,26 +30,50 @@ struct Location {
     let name: String?
 }
 
+protocol SearchTableViewCellDelegate: class {
+    func actionPressed(cell: SearchTableViewCell, toggled: Bool)
+}
+
 final class SearchTableViewCell: UITableViewCell {
     static let identifier = "SearchTableViewCell"
-    
-    static let plus = UIImage(named: "+")!
-    static let minus = UIImage(named: "x")!
     static let height: CGFloat = 55
+    static let plus = UIImage(named: "+")!
     
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var actionButton: UIButton!
     
+    weak var delegate: SearchTableViewCellDelegate?
+    var toggled: Bool = true {
+        didSet {
+            UIView.animate(withDuration: 0.25) {
+                if self.toggled {
+                    self.actionButton.transform = CGAffineTransform.identity
+                } else {
+                    self.actionButton.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 4.0)
+                }
+            }
+        }
+    }
+    
     func configure(with location: Location) {
         categoryLabel.text = location.category.rawValue.uppercased()
         
+        if location.category == .start {
+            actionButton.setImage(nil, for: .normal)
+        } else {
+            actionButton.setImage(SearchTableViewCell.plus, for: .normal)
+        }
+        
         if let name = location.name {
-            actionButton.imageView?.image = SearchTableViewCell.plus
             textField.text = name
         } else {
-            actionButton.imageView?.image = SearchTableViewCell.minus
             textField.placeholder = location.category.placeholder()
         }
+    }
+    
+    @IBAction func actionPressed(_ sender: UIButton) {
+        delegate?.actionPressed(cell: self, toggled: toggled)
+        toggled = !toggled
     }
 }

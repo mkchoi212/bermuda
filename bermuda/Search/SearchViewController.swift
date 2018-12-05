@@ -13,8 +13,9 @@ final class SearchViewController: UIViewController {
     @IBOutlet weak var topPadding: NSLayoutConstraint!
     @IBOutlet weak var tableViewContainer: UIView!
     @IBOutlet weak var tableViewContainerHeight: NSLayoutConstraint!
-    
     @IBOutlet weak var searchTableView: UITableView!
+    
+    var rowCount = 2
     
     var locations: [Location] = [
         Location(category: .start, name: "Current Location")
@@ -54,6 +55,11 @@ final class SearchViewController: UIViewController {
     }
 }
 
+extension SearchViewController: SearchTableViewCellDelegate {
+    func actionPressed(cell: SearchTableViewCell, toggled: Bool) {
+    }
+}
+
 extension SearchViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -68,6 +74,8 @@ extension SearchViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableViewCell.identifier, for: indexPath) as? SearchTableViewCell else {
             fatalError("No identifer named \(SearchTableViewCell.identifier)")
         }
+        
+        cell.delegate = self
         
         let row = indexPath.row
         if row >= locations.count {
