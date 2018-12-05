@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainContentVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PrimaryContentViewController")
         let pulleyDrawerVC = PulleyViewController(contentViewController: mainContentVC)
         
-        pulleyDrawerVC.initialDrawerPosition = .collapsed
+        pulleyDrawerVC.initialDrawerPosition = .partiallyRevealed
         
         window?.rootViewController = pulleyDrawerVC
         window?.makeKeyAndVisible()

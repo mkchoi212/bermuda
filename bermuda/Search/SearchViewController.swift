@@ -11,8 +11,10 @@ import UIKit
 final class SearchViewController: UIViewController {
     
     @IBOutlet weak var topPadding: NSLayoutConstraint!
+    @IBOutlet weak var tableViewContainer: UIView!
+    @IBOutlet weak var tableViewContainerHeight: NSLayoutConstraint!
+    
     @IBOutlet weak var searchTableView: UITableView!
-    @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
     
     var locations: [Location] = [
         Location(category: .start, name: "Current Location")
@@ -26,7 +28,6 @@ final class SearchViewController: UIViewController {
         setupView()
     }
 
-    
     @IBAction func cancelPressed(_ sender: Any) {
         pulleyViewController?.setDrawerPosition(position: .partiallyRevealed, animated: true)
     }
@@ -35,11 +36,12 @@ final class SearchViewController: UIViewController {
         let navigationBarHeight = navigationController!.navigationBar.frame.size.height
         topPadding.constant += navigationBarHeight
         
-        tableViewHeight.constant = SearchTableViewCell.height * 2
-        
+        tableViewContainerHeight.constant = SearchTableViewCell.height * 2
+
         searchTableView.layer.cornerRadius = 8.0
-        searchTableView.dropShadow()
         searchTableView.tableFooterView = UIView()
+        
+        tableViewContainer.dropShadow()
         
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()

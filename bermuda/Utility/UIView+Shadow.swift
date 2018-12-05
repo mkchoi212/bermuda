@@ -9,7 +9,8 @@
 import UIKit
 
 extension UIView {
-    func dropShadow(scale: Bool = true) {
+    func dropShadow(cornerRadius: CGFloat = 8.0) {
+        layer.cornerRadius = cornerRadius
         layer.masksToBounds = false
         layer.shadowOffset = CGSize(width: 1, height: 1)
         layer.shadowColor = UIColor.black.cgColor

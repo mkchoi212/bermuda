@@ -24,8 +24,6 @@ class HomePanelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchView.clipsToBounds = true
-        searchView.layer.cornerRadius = 8.0
         searchView.dropShadow()
     }
     
